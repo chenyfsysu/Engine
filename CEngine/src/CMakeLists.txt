@@ -1,0 +1,31 @@
+cmake_minimum_required (VERSION 2.6)
+
+PROJECT(engine)
+
+# add includes
+INCLUDE_DIRECTORIES(${CMAKE_CURRENT_LIST_DIR}/../lib/glfw/include)
+INCLUDE_DIRECTORIES(${CMAKE_CURRENT_LIST_DIR}/../lib/glew/include)
+
+# link libraries
+LINK_DIRECTORIES(${CMAKE_CURRENT_LIST_DIR}/../lib/glfw/lib)
+LINK_DIRECTORIES(${CMAKE_CURRENT_LIST_DIR}/../lib/glfw/lib)
+
+ADD_EXECUTABLE(engine
+        main.cpp
+)
+
+# target link
+TARGET_LINK_LIBRARIES(engine glfw3)
+TARGET_LINK_LIBRARIES(engine glew)
+
+IF(APPLE)
+	FIND_LIBRARY(OPENGL OPENGL)
+	FIND_LIBRARY(COCOA Cocoa)
+	FIND_LIBRARY(IOKIT IOKit)
+	FIND_LIBRARY(COREVIDEO CoreVideo)
+
+	TARGET_LINK_LIBRARIES(engine ${OPENGL})
+	TARGET_LINK_LIBRARIES(engine ${COCOA})
+	TARGET_LINK_LIBRARIES(engine ${IOKIT})
+	TARGET_LINK_LIBRARIES(engine ${COREVIDEO})
+ENDIF()
