@@ -1,5 +1,10 @@
 file(REMOVE_RECURSE
   "CMakeFiles/engine.dir/main.cpp.o"
+  "CMakeFiles/engine.dir/render/Camera.cpp.o"
+  "CMakeFiles/engine.dir/render/Mesh.cpp.o"
+  "CMakeFiles/engine.dir/render/Model.cpp.o"
+  "CMakeFiles/engine.dir/render/ShaderProgram.cpp.o"
+  "CMakeFiles/engine.dir/common/FileUtils.cpp.o"
   "engine.pdb"
   "engine"
 )

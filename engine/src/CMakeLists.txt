@@ -1,31 +1,38 @@
 cmake_minimum_required (VERSION 2.6)
 
-PROJECT(engine)
+project(engine)
 
 # add includes
-INCLUDE_DIRECTORIES(${CMAKE_CURRENT_LIST_DIR}/../lib/glfw/include)
-INCLUDE_DIRECTORIES(${CMAKE_CURRENT_LIST_DIR}/../lib/glew/include)
+include_directories(${CMAKE_CURRENT_LIST_DIR}/../lib/glfw/include)
+include_directories(${CMAKE_CURRENT_LIST_DIR}/../lib/glew/include)
+include_directories(${CMAKE_CURRENT_LIST_DIR})
 
 # link libraries
-LINK_DIRECTORIES(${CMAKE_CURRENT_LIST_DIR}/../lib/glfw/lib)
-LINK_DIRECTORIES(${CMAKE_CURRENT_LIST_DIR}/../lib/glfw/lib)
+link_directories(${CMAKE_CURRENT_LIST_DIR}/../lib/glfw/lib)
+link_directories(${CMAKE_CURRENT_LIST_DIR}/../lib/glfw/lib)
 
-ADD_EXECUTABLE(engine
+aux_source_directory(render render_src)
+aux_source_directory(common common_src)
+aux_source_directory(glm, glm_src)
+add_executable(engine
         main.cpp
+        ${render_src}
+        ${common_src}
+        ${glm_src}
 )
 
 # target link
-TARGET_LINK_LIBRARIES(engine glfw3)
-TARGET_LINK_LIBRARIES(engine glew)
+target_link_libraries(engine glfw3)
+target_link_libraries(engine glew)
 
-IF(APPLE)
-	FIND_LIBRARY(OPENGL OPENGL)
-	FIND_LIBRARY(COCOA Cocoa)
-	FIND_LIBRARY(IOKIT IOKit)
-	FIND_LIBRARY(COREVIDEO CoreVideo)
+if(APPLE)
+	find_library(OPENGL OPENGL)
+	find_library(COCOA Cocoa)
+	find_library(IOKIT IOKit)
+	find_library(COREVIDEO CoreVideo)
 
-	TARGET_LINK_LIBRARIES(engine ${OPENGL})
-	TARGET_LINK_LIBRARIES(engine ${COCOA})
-	TARGET_LINK_LIBRARIES(engine ${IOKIT})
-	TARGET_LINK_LIBRARIES(engine ${COREVIDEO})
-ENDIF()
+	target_link_libraries(engine ${OPENGL})
+	target_link_libraries(engine ${COCOA})
+	target_link_libraries(engine ${IOKIT})
+	target_link_libraries(engine ${COREVIDEO})
+endif()

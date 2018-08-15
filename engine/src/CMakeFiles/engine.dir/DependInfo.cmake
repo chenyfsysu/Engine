@@ -4,7 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/chenyuanfang/Documents/Engine/CEngine/src/main.cpp" "/Users/chenyuanfang/Documents/Engine/CEngine/src/CMakeFiles/engine.dir/main.cpp.o"
+  "/Users/chenyuanfang/Documents/Engine/engine/src/common/FileUtils.cpp" "/Users/chenyuanfang/Documents/Engine/engine/src/CMakeFiles/engine.dir/common/FileUtils.cpp.o"
+  "/Users/chenyuanfang/Documents/Engine/engine/src/main.cpp" "/Users/chenyuanfang/Documents/Engine/engine/src/CMakeFiles/engine.dir/main.cpp.o"
+  "/Users/chenyuanfang/Documents/Engine/engine/src/render/Camera.cpp" "/Users/chenyuanfang/Documents/Engine/engine/src/CMakeFiles/engine.dir/render/Camera.cpp.o"
+  "/Users/chenyuanfang/Documents/Engine/engine/src/render/Mesh.cpp" "/Users/chenyuanfang/Documents/Engine/engine/src/CMakeFiles/engine.dir/render/Mesh.cpp.o"
+  "/Users/chenyuanfang/Documents/Engine/engine/src/render/Model.cpp" "/Users/chenyuanfang/Documents/Engine/engine/src/CMakeFiles/engine.dir/render/Model.cpp.o"
+  "/Users/chenyuanfang/Documents/Engine/engine/src/render/ShaderProgram.cpp" "/Users/chenyuanfang/Documents/Engine/engine/src/CMakeFiles/engine.dir/render/ShaderProgram.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "Clang")
 
@@ -12,6 +17,7 @@ set(CMAKE_CXX_COMPILER_ID "Clang")
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../lib/glfw/include"
   "../lib/glew/include"
+  "."
   )
 
 # Targets to which this target links.

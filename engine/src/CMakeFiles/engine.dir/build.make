@@ -43,10 +43,10 @@ RM = /usr/local/Cellar/cmake/3.12.0/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/chenyuanfang/Documents/Engine/CEngine/src
+CMAKE_SOURCE_DIR = /Users/chenyuanfang/Documents/Engine/engine/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/chenyuanfang/Documents/Engine/CEngine/src
+CMAKE_BINARY_DIR = /Users/chenyuanfang/Documents/Engine/engine/src
 
 # Include any dependencies generated for this target.
 include CMakeFiles/engine.dir/depend.make
@@ -59,28 +59,103 @@ include CMakeFiles/engine.dir/flags.make
 
 CMakeFiles/engine.dir/main.cpp.o: CMakeFiles/engine.dir/flags.make
 CMakeFiles/engine.dir/main.cpp.o: main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chenyuanfang/Documents/Engine/CEngine/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/engine.dir/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/main.cpp.o -c /Users/chenyuanfang/Documents/Engine/CEngine/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chenyuanfang/Documents/Engine/engine/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/engine.dir/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/main.cpp.o -c /Users/chenyuanfang/Documents/Engine/engine/src/main.cpp
 
 CMakeFiles/engine.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chenyuanfang/Documents/Engine/CEngine/src/main.cpp > CMakeFiles/engine.dir/main.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chenyuanfang/Documents/Engine/engine/src/main.cpp > CMakeFiles/engine.dir/main.cpp.i
 
 CMakeFiles/engine.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chenyuanfang/Documents/Engine/CEngine/src/main.cpp -o CMakeFiles/engine.dir/main.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chenyuanfang/Documents/Engine/engine/src/main.cpp -o CMakeFiles/engine.dir/main.cpp.s
+
+CMakeFiles/engine.dir/render/Camera.cpp.o: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/render/Camera.cpp.o: render/Camera.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chenyuanfang/Documents/Engine/engine/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/engine.dir/render/Camera.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/render/Camera.cpp.o -c /Users/chenyuanfang/Documents/Engine/engine/src/render/Camera.cpp
+
+CMakeFiles/engine.dir/render/Camera.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/render/Camera.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chenyuanfang/Documents/Engine/engine/src/render/Camera.cpp > CMakeFiles/engine.dir/render/Camera.cpp.i
+
+CMakeFiles/engine.dir/render/Camera.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/render/Camera.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chenyuanfang/Documents/Engine/engine/src/render/Camera.cpp -o CMakeFiles/engine.dir/render/Camera.cpp.s
+
+CMakeFiles/engine.dir/render/Mesh.cpp.o: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/render/Mesh.cpp.o: render/Mesh.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chenyuanfang/Documents/Engine/engine/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/engine.dir/render/Mesh.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/render/Mesh.cpp.o -c /Users/chenyuanfang/Documents/Engine/engine/src/render/Mesh.cpp
+
+CMakeFiles/engine.dir/render/Mesh.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/render/Mesh.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chenyuanfang/Documents/Engine/engine/src/render/Mesh.cpp > CMakeFiles/engine.dir/render/Mesh.cpp.i
+
+CMakeFiles/engine.dir/render/Mesh.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/render/Mesh.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chenyuanfang/Documents/Engine/engine/src/render/Mesh.cpp -o CMakeFiles/engine.dir/render/Mesh.cpp.s
+
+CMakeFiles/engine.dir/render/Model.cpp.o: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/render/Model.cpp.o: render/Model.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chenyuanfang/Documents/Engine/engine/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/engine.dir/render/Model.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/render/Model.cpp.o -c /Users/chenyuanfang/Documents/Engine/engine/src/render/Model.cpp
+
+CMakeFiles/engine.dir/render/Model.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/render/Model.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chenyuanfang/Documents/Engine/engine/src/render/Model.cpp > CMakeFiles/engine.dir/render/Model.cpp.i
+
+CMakeFiles/engine.dir/render/Model.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/render/Model.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chenyuanfang/Documents/Engine/engine/src/render/Model.cpp -o CMakeFiles/engine.dir/render/Model.cpp.s
+
+CMakeFiles/engine.dir/render/ShaderProgram.cpp.o: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/render/ShaderProgram.cpp.o: render/ShaderProgram.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chenyuanfang/Documents/Engine/engine/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/engine.dir/render/ShaderProgram.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/render/ShaderProgram.cpp.o -c /Users/chenyuanfang/Documents/Engine/engine/src/render/ShaderProgram.cpp
+
+CMakeFiles/engine.dir/render/ShaderProgram.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/render/ShaderProgram.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chenyuanfang/Documents/Engine/engine/src/render/ShaderProgram.cpp > CMakeFiles/engine.dir/render/ShaderProgram.cpp.i
+
+CMakeFiles/engine.dir/render/ShaderProgram.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/render/ShaderProgram.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chenyuanfang/Documents/Engine/engine/src/render/ShaderProgram.cpp -o CMakeFiles/engine.dir/render/ShaderProgram.cpp.s
+
+CMakeFiles/engine.dir/common/FileUtils.cpp.o: CMakeFiles/engine.dir/flags.make
+CMakeFiles/engine.dir/common/FileUtils.cpp.o: common/FileUtils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/chenyuanfang/Documents/Engine/engine/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/engine.dir/common/FileUtils.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/engine.dir/common/FileUtils.cpp.o -c /Users/chenyuanfang/Documents/Engine/engine/src/common/FileUtils.cpp
+
+CMakeFiles/engine.dir/common/FileUtils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/engine.dir/common/FileUtils.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/chenyuanfang/Documents/Engine/engine/src/common/FileUtils.cpp > CMakeFiles/engine.dir/common/FileUtils.cpp.i
+
+CMakeFiles/engine.dir/common/FileUtils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/engine.dir/common/FileUtils.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/chenyuanfang/Documents/Engine/engine/src/common/FileUtils.cpp -o CMakeFiles/engine.dir/common/FileUtils.cpp.s
 
 # Object files for target engine
 engine_OBJECTS = \
-"CMakeFiles/engine.dir/main.cpp.o"
+"CMakeFiles/engine.dir/main.cpp.o" \
+"CMakeFiles/engine.dir/render/Camera.cpp.o" \
+"CMakeFiles/engine.dir/render/Mesh.cpp.o" \
+"CMakeFiles/engine.dir/render/Model.cpp.o" \
+"CMakeFiles/engine.dir/render/ShaderProgram.cpp.o" \
+"CMakeFiles/engine.dir/common/FileUtils.cpp.o"
 
 # External object files for target engine
 engine_EXTERNAL_OBJECTS =
 
 engine: CMakeFiles/engine.dir/main.cpp.o
+engine: CMakeFiles/engine.dir/render/Camera.cpp.o
+engine: CMakeFiles/engine.dir/render/Mesh.cpp.o
+engine: CMakeFiles/engine.dir/render/Model.cpp.o
+engine: CMakeFiles/engine.dir/render/ShaderProgram.cpp.o
+engine: CMakeFiles/engine.dir/common/FileUtils.cpp.o
 engine: CMakeFiles/engine.dir/build.make
 engine: CMakeFiles/engine.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/chenyuanfang/Documents/Engine/CEngine/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable engine"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/chenyuanfang/Documents/Engine/engine/src/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable engine"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/engine.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -93,6 +168,6 @@ CMakeFiles/engine.dir/clean:
 .PHONY : CMakeFiles/engine.dir/clean
 
 CMakeFiles/engine.dir/depend:
-	cd /Users/chenyuanfang/Documents/Engine/CEngine/src && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/chenyuanfang/Documents/Engine/CEngine/src /Users/chenyuanfang/Documents/Engine/CEngine/src /Users/chenyuanfang/Documents/Engine/CEngine/src /Users/chenyuanfang/Documents/Engine/CEngine/src /Users/chenyuanfang/Documents/Engine/CEngine/src/CMakeFiles/engine.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/chenyuanfang/Documents/Engine/engine/src && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/chenyuanfang/Documents/Engine/engine/src /Users/chenyuanfang/Documents/Engine/engine/src /Users/chenyuanfang/Documents/Engine/engine/src /Users/chenyuanfang/Documents/Engine/engine/src /Users/chenyuanfang/Documents/Engine/engine/src/CMakeFiles/engine.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/engine.dir/depend
 

@@ -48,10 +48,10 @@ RM = /usr/local/Cellar/cmake/3.12.0/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/chenyuanfang/Documents/Engine/CEngine/src
+CMAKE_SOURCE_DIR = /Users/chenyuanfang/Documents/Engine/engine/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/chenyuanfang/Documents/Engine/CEngine/src
+CMAKE_BINARY_DIR = /Users/chenyuanfang/Documents/Engine/engine/src
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chenyuanfang/Documents/Engine/CEngine/src/CMakeFiles /Users/chenyuanfang/Documents/Engine/CEngine/src/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chenyuanfang/Documents/Engine/engine/src/CMakeFiles /Users/chenyuanfang/Documents/Engine/engine/src/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chenyuanfang/Documents/Engine/CEngine/src/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/chenyuanfang/Documents/Engine/engine/src/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,6 +123,33 @@ engine/fast:
 	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/build
 .PHONY : engine/fast
 
+common/FileUtils.o: common/FileUtils.cpp.o
+
+.PHONY : common/FileUtils.o
+
+# target to build an object file
+common/FileUtils.cpp.o:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/common/FileUtils.cpp.o
+.PHONY : common/FileUtils.cpp.o
+
+common/FileUtils.i: common/FileUtils.cpp.i
+
+.PHONY : common/FileUtils.i
+
+# target to preprocess a source file
+common/FileUtils.cpp.i:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/common/FileUtils.cpp.i
+.PHONY : common/FileUtils.cpp.i
+
+common/FileUtils.s: common/FileUtils.cpp.s
+
+.PHONY : common/FileUtils.s
+
+# target to generate assembly for a file
+common/FileUtils.cpp.s:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/common/FileUtils.cpp.s
+.PHONY : common/FileUtils.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -150,6 +177,114 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+render/Camera.o: render/Camera.cpp.o
+
+.PHONY : render/Camera.o
+
+# target to build an object file
+render/Camera.cpp.o:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/render/Camera.cpp.o
+.PHONY : render/Camera.cpp.o
+
+render/Camera.i: render/Camera.cpp.i
+
+.PHONY : render/Camera.i
+
+# target to preprocess a source file
+render/Camera.cpp.i:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/render/Camera.cpp.i
+.PHONY : render/Camera.cpp.i
+
+render/Camera.s: render/Camera.cpp.s
+
+.PHONY : render/Camera.s
+
+# target to generate assembly for a file
+render/Camera.cpp.s:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/render/Camera.cpp.s
+.PHONY : render/Camera.cpp.s
+
+render/Mesh.o: render/Mesh.cpp.o
+
+.PHONY : render/Mesh.o
+
+# target to build an object file
+render/Mesh.cpp.o:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/render/Mesh.cpp.o
+.PHONY : render/Mesh.cpp.o
+
+render/Mesh.i: render/Mesh.cpp.i
+
+.PHONY : render/Mesh.i
+
+# target to preprocess a source file
+render/Mesh.cpp.i:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/render/Mesh.cpp.i
+.PHONY : render/Mesh.cpp.i
+
+render/Mesh.s: render/Mesh.cpp.s
+
+.PHONY : render/Mesh.s
+
+# target to generate assembly for a file
+render/Mesh.cpp.s:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/render/Mesh.cpp.s
+.PHONY : render/Mesh.cpp.s
+
+render/Model.o: render/Model.cpp.o
+
+.PHONY : render/Model.o
+
+# target to build an object file
+render/Model.cpp.o:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/render/Model.cpp.o
+.PHONY : render/Model.cpp.o
+
+render/Model.i: render/Model.cpp.i
+
+.PHONY : render/Model.i
+
+# target to preprocess a source file
+render/Model.cpp.i:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/render/Model.cpp.i
+.PHONY : render/Model.cpp.i
+
+render/Model.s: render/Model.cpp.s
+
+.PHONY : render/Model.s
+
+# target to generate assembly for a file
+render/Model.cpp.s:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/render/Model.cpp.s
+.PHONY : render/Model.cpp.s
+
+render/ShaderProgram.o: render/ShaderProgram.cpp.o
+
+.PHONY : render/ShaderProgram.o
+
+# target to build an object file
+render/ShaderProgram.cpp.o:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/render/ShaderProgram.cpp.o
+.PHONY : render/ShaderProgram.cpp.o
+
+render/ShaderProgram.i: render/ShaderProgram.cpp.i
+
+.PHONY : render/ShaderProgram.i
+
+# target to preprocess a source file
+render/ShaderProgram.cpp.i:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/render/ShaderProgram.cpp.i
+.PHONY : render/ShaderProgram.cpp.i
+
+render/ShaderProgram.s: render/ShaderProgram.cpp.s
+
+.PHONY : render/ShaderProgram.s
+
+# target to generate assembly for a file
+render/ShaderProgram.cpp.s:
+	$(MAKE) -f CMakeFiles/engine.dir/build.make CMakeFiles/engine.dir/render/ShaderProgram.cpp.s
+.PHONY : render/ShaderProgram.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -159,9 +294,24 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... engine"
+	@echo "... common/FileUtils.o"
+	@echo "... common/FileUtils.i"
+	@echo "... common/FileUtils.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... render/Camera.o"
+	@echo "... render/Camera.i"
+	@echo "... render/Camera.s"
+	@echo "... render/Mesh.o"
+	@echo "... render/Mesh.i"
+	@echo "... render/Mesh.s"
+	@echo "... render/Model.o"
+	@echo "... render/Model.i"
+	@echo "... render/Model.s"
+	@echo "... render/ShaderProgram.o"
+	@echo "... render/ShaderProgram.i"
+	@echo "... render/ShaderProgram.s"
 .PHONY : help
 
 

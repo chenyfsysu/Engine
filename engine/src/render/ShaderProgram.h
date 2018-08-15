@@ -1,8 +1,9 @@
 #pragma once
 
-#include <iostream>
-#include "../glm/glm.hpp"
-using namespace std;
+#include "glm/glm.hpp"
+#include <string>
+#include <GL/Glew.h>
+#include <GLFW/glfw3.h>
 
 class ShaderProgram
 {
@@ -10,16 +11,16 @@ public:
 	ShaderProgram();
 
 	bool assign(const char* vertPath, const char* fragPath);
-	bool compile();
-	bool link();
 	bool use();
 
-	void setBool(const string &name, bool value) const;
-	void setInt(const string &name, int value) const;
-	void setFloat(const string &name, int value) const;
-	void setVec2(const string &name) const;
+	void setBool(const std::string &name, bool value) const;
+	void setInt(const std::string &name, int value) const;
+	void setFloat(const std::string &name, float value) const;
+	void checkShaderCompile(GLuint shader, std::string type);
 
 
 private:
-	int shaderId;
+	unsigned int mShaderId;
+	unsigned int mVertShader;
+	unsigned int mFragShader;
 };
